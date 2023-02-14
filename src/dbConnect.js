@@ -6,7 +6,7 @@ const user = process.env.USUARIO;
 const password = process.env.SENHA;
 
 const cliente = new MongoClient(
-  "mongodb+srv://marcelino:123@alurasocketio.dre6x6b.mongodb.net/?retryWrites=true&w=majority"
+  `mongodb+srv://${user}:${password}@alurasocketio.dre6x6b.mongodb.net/?retryWrites=true&w=majority`
 );
 
 let documentosColecao;
